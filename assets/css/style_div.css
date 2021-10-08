@@ -1,8 +1,6 @@
 body {
     text-align:center;
 }
-#page {
-}
 div {
     text-align: center;
 }
@@ -10,19 +8,12 @@ div#bandeau {
     background-color: #00CCFF;
 }
 div#contenu {
-    height: 400px;
     background-color: #dfe4ea;
 }
-div#blocnews {
-    height: 150px;
-    background-color: #FF3300;
-}
 div#footer {
-    height: 50px;
     background-color: #33FF99;
     clear: both;
 }
 div#menu {
-    height: 400px;
     background-color: #ced6e0;
 }
