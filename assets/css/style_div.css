@@ -18,7 +18,7 @@ div#bandeau {
 div#contenu {
     width: 600px;
     height: 400px;
-    background-color: #FFCC00;
+    background-color: #dfe4ea;
 }
 div#blocnews {
     float: right;
@@ -36,5 +36,5 @@ div#menu {
     float: left;
     width: 100px;
     height: 400px;
-    background-color: #FF6699;
+    background-color: #ced6e0;
 }
