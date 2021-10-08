@@ -1,0 +1,54 @@
+/*
+style.css de index
+-------------------
+
+Par AHJ
+*/
+body {
+	/*background-image: url("../img/zellige.png");
+	background-repeat: no-repeat;
+	background-position: 30px 50px;*/
+}
+h1 {
+	font-family: Arial, serif;
+	font-size: 1.5em;
+	color: grey;
+}
+
+h2 {
+	font-family: Arial, serif;
+	font-size: 1.2em;
+	border: 1px solid black;
+	box-shadow: 6px 6px 6px black;
+	width: 50%;
+}
+
+p {
+	font-size: 1em;
+	width: 80%;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+	font-style: italic;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: blue;
+	font-weight: bold;
+}
+
+a:active {
+	background-color: #FFCC66;
+}
+
+a:focus {
+	background-color: #FFCC66;
+}
+
+a:visited {
+	background-color: #AAA;
+}
+
