@@ -1,19 +1,33 @@
-body {
-    text-align:center;
+[class*="col-"], nav, section, footer {
+	background-color: #EBECED;
+	border: 1px solid black;
+	border-radius: 3px;
+	line-height:  40px;
+	text-align: center;
+}
+.container {
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
 }
 div {
     text-align: center;
 }
-div#bandeau {
+#banniere {
     background-color: #00CCFF;
+    display : block;
 }
-div#contenu {
+.titre_pincipal {
+	text-decoration:none;
+}
+#contenu {
     background-color: #dfe4ea;
 }
-div#footer {
-    background-color: #33FF99;
-    clear: both;
+#footer {
+	height: 35px;
+  	display: inline;
 }
-div#menu {
+#menu_horiz {
     background-color: #ced6e0;
 }
