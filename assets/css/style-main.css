@@ -184,18 +184,22 @@ body {
 }
 .main {
   grid-area: main;
+/*
+	display: grid;
 
-  /*
-  background-color: #cbf0f1;
-  background-image: url(../img/DSC_0936-03.png);
-  background-repeat: no-repeat;
-  background-size: cover;*/
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 400px;
 
-  background-image: img-background;
-  
+	grid-template-areas: 
+    "h1-post"
+		"link-form";
+*/
+
   border: 1px solid rgb(163, 164, 170);
 }
 .title-content {
+  grid-area: title-content;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -204,8 +208,8 @@ body {
 	padding: 0px;
 }
 
-.link-posts {
-
+.link-posts {/*
+  grid-area: link-posts;*/
   display: flex;
   justify-content: center;
   align-items: center;
