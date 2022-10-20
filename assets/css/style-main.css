@@ -45,7 +45,7 @@ body {
 	margin: 0 auto;
 	padding: 0px;											
   
-  background-image: url(../img/DSC_0936-04.png);
+  background-image: url(../img/tags-Marseille-L-Estaque-1-01.png);
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -193,9 +193,9 @@ body {
 	grid-template-areas: 
     "h1-post"
 		"link-form";
-*/
 
-  border: 1px solid rgb(163, 164, 170);
+*/
+  border-bottom: 1px solid rgb(163, 164, 170);
 }
 .title-content {
   grid-area: title-content;
@@ -232,16 +232,16 @@ body {
 
 	margin: 0px;
 	padding: 0px 5px 0px 5px;
-	
-	border-bottom: 1px solid rgb(163, 164, 170);
+	/*
+	border-bottom: 1px solid rgb(163, 164, 170);*/
 }
 .li-aside {
 	margin: 5px 0px 5px 0px;
 	padding: 5px 5px 5px 5px;
 
-	color: #313131;
+	color: #f3f3f3;
 
-	background-color: #b2b5b8a1;
+	background-color: #858686a1;
 }
 .li-aside:hover {
 	background-color: #fcab4f;
