@@ -1,0 +1,92 @@
+/*
+    style-irregularVerbsRandom.css
+    -------------------
+    Par AHJ
+*/
+
+.section-table {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto auto;
+
+    grid-gap: 0px;
+
+    grid-template-areas: "title-table"
+                          "table"
+                          "button";
+       
+	margin: 0px;
+    padding: 20px 20px 10px 20px;
+}
+.title-table {
+    grid-area: title-table;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table {
+    grid-area: table;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+   
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    background-color: azure;
+	border-collapse: collapse;
+    border: 1px solid #b2bec3;
+}
+#titleRow {
+    margin: 5px;
+    background-color: azure;
+}
+#tenses {
+    font-weight: bold;
+    padding: 5px;
+    background-color: azure;
+    border: 1px solid #b2bec3;
+}
+#verb {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #b2bec3;
+}
+#contentRow {
+    margin: 5px;
+    background-color: #DDD;
+}
+#infinitive {
+    margin: 0px;    
+    border: 1px solid #b2bec3;
+}
+#simplePast {
+    margin: 0px;    
+    border: 1px solid #b2bec3;
+}
+#pastParticipe {   
+    margin: 0px;    
+    border: 1px solid #b2bec3;
+}
+#translation {   
+    margin: 0px;   
+    border: 1px solid #b2bec3;
+}
+button {
+    grid-area: button;
+
+    width: 70px;
+    height: 35px;
+
+    margin: 20px auto;
+    padding: 5px;
+}
+/*
+.button_next { 
+}*/

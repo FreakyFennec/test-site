@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-96x96.png">
+
+        <link rel="stylesheet" href="assets/css/style-main.css">
+        <link rel="stylesheet" href="assets/css/style-menu-hamburger-lateral-1-02.css">
+    <link rel="stylesheet" href="assets/css/style-irregularVerbsTable.css">
+
+    <title>Irregular verbs (table)</title>
+</head>
+
+<body onload="displayAllIrregularVerb();">
+	<div class="grid">
+        <header class="header">
+            <a class="website-name" href="../index.html"><h1 class="h1-website-name">My english tutor</h1></a>
+        </header>
+
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../blog/blog.html">Blog</a></li>
+              <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span><!--
+                <p id="openBtnName">Menu</p>-->
+            </span>
+        </a>
+
+			<div class="content"><!-- content -->               
+                <section class="section-all-irr-ver-table">
+                    <h1 class="title-table">Irregular verbs</h1>
+                    <div id="scroll-container">
+                        <table class="table">
+                            <thead>
+                                <tr id="titleRow">
+                                    <th id="temps">Infinitive</th>
+                                    <th id="temps">Simple past</th>
+                                    <th id="temps">Past participe</th>
+                                    <th id="temps">Translation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <tr id="contentRow" height="33px">
+                                    <td id="infinitive" height="33px"></td>
+                                    <td id="simplePast" height="33px"></td>
+                                    <td id="pastParticipe" height="33px"></td>
+                                    <td id="translation" height="33px"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+			</div>
+        
+            <div class="pagination">
+                <a class="a-link-pagination" href="#.html">Prev</a>
+                <a class="a-link-pagination" href="index.html">Home</a>
+                <a class="a-link-pagination" href="#.html">Next</a>
+            </div>
+    
+            <footer class="footer">
+                <p class="footer-content">Shapped by "The stinky feet workshop's" &copy 2022</p>
+            </footer>
+    </div><!-- /. grid -->
+
+    <script type="text/javascript" src="assets/js/AllIrregularVerbs-table.js"></script>
+    <script src="assets/js/menu-hamburger-lateral-1-02.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+/*
+	style-irregularVerbsTable.css
+	====================================
+	Par AHJ
+*/
+
+/* Distribution of cells in 4 columns and ? rows */
+#section-all-irr-ver-table {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto;
+
+  grid-gap: 0px;
+
+  grid-template-areas: "title-table";
+  grid-template-areas: "table";
+       
+	margin: 0px;
+  padding: 0px;
+}
+
+.table { 
+	grid-area: table;
+    
+  max-width: 900px;
+	
+  margin: 20px auto;
+
+  background-color: rgb(218, 231, 231);
+	border-collapse: collapse;
+  border: 1px solid #b2bec3;
+}
+#scroll-container {
+	overflow: auto;
+	height: 780px;
+}
+
+/* Table title */
+.title-table {
+	grid-area: title-table;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: auto ;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;  
+}
+
+/* Row containing columns title */
+#titleRow {
+  height: 40px;
+}
+/* Contain columns title */
+#temps {
+	font-size: 18px;
+	
+	padding: 5px;
+
+	background-color: rgb(226, 226, 226);
+	border: 1px solid #b2bec3;
+}
+
+/* Row containing results */
+#contentRow {
+	margin: 0px;
+
+	background-color: rgb(247, 247, 247);
+}
+#infinitive, #simplePast, #pastParticipe, #translation {   
+	text-align: center;
+
+	margin: 0px;
+
+	border: 1px solid #b2bec3;
+}

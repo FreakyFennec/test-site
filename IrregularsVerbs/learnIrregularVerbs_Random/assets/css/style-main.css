@@ -1,0 +1,191 @@
+/*
+  style-main-1-02.css
+  ====================
+  Par AHJ
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  
+  text-decoration: none;
+  list-style: none;
+
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+	margin: 0px;
+  padding: 0px;
+}
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 7vh 83vh 5vh 5vh;
+
+  grid-template-areas: "header openBtn"
+                        "content content"
+                        "pagination pagination"
+                        "footer footer";
+  
+  width: 100%;/*
+  margin: 0px auto;*/
+
+	background-image: url(../img/british-flag-1-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid rgb(163, 164, 170);
+}
+/*
+@media only screen and (min-width: 900px) {
+  .grid {
+    max-width: 1024px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px auto auto auto;
+    grid-gap: 0px;
+
+    grid-template-areas: "header openBtn"
+                          "content content"
+                          "pagination pagination"
+                          "footer footer";
+
+		background-image: url(../img/british-flag-1-02.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+  }
+  .grid div, header, nav, content, footer {
+   font-size: 16px;
+
+   padding: 0px;
+  }
+  .website-name {
+    grid-area: website-name;
+  
+    font-size: 1.5em;
+  }
+  
+}
+*/
+.header {
+  grid-area: header;
+
+  padding: 10px;
+  text-align: center;
+
+	display: flex;
+	justify-content: left;
+	align-items: center;
+
+  background-color: rgba(52, 133, 255, 0.712);
+  border-top: 1px solid #b2bec3;
+  border-bottom: 1px solid #b2bec3;
+  border-left: 1px solid #b2bec3;
+}
+.website-name {
+  grid-area: website-name;
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.h1-website-name {
+  grid-area: h1-website-name;
+
+  font-size: 1.5em;
+  
+  color: rgb(255, 255, 255);
+
+  margin: 0px;
+}
+
+.content {
+  grid-area: content;
+
+	margin: 0px;
+  padding: 0px;
+
+  border: 1px solid #b2bec3;
+}
+.section-content {
+  grid-area: content;
+
+	margin: 0px;
+  padding: 20px 20px 10px 20px;
+
+  background-color: rgba(221, 221, 221, 0.5);/*
+  border: 1px solid #b2bec3;*/
+}
+.title-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+	color: #000;
+
+	text-align: left;
+}
+.a-page {
+  color: black;
+
+  margin: 10px 0px;
+}
+
+.link-description {
+  line-height: 25px;
+
+  margin: 15px 0px;
+
+  background-color: #c7d2d665;
+}
+.link-description:hover {
+  background-color: #cbecf8;
+}
+
+.pagination {
+  grid-area: pagination;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(221, 221, 221, 0.712);
+  border: 1px solid #b2bec3;
+}
+.a-link-pagination {
+  color: rgb(255, 255, 255);
+
+  margin: 5px ;
+  padding: 5px ;
+
+  background-color: rgba(52, 133, 255, 0.712);
+  border: 1px solid #b2bec3;
+  border-radius: 5px;
+}
+.a-link-pagination:hover {
+  background-color: rgba(255, 59, 52, 0.932);
+}
+
+footer {
+  grid-area: footer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px; 
+  padding: 0px;
+
+  background-color: rgba(52, 133, 255, 0.712);
+  border: 1px solid #b2bec3;
+}
+.footer-content {
+  color: rgb(255, 255, 255);
+
+  margin: 0px;
+  padding: 10px;
+}

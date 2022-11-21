@@ -1,0 +1,105 @@
+/*
+  style-irregularVerbsDiv-1-02.css
+  ==================================
+  Par AHJ
+*/
+.table-div {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0px;
+}
+/* Distribution of cells in 4 columns and ? rows */
+.section-all-irr-ver-div {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 40px auto;
+
+  grid-gap: 0px;
+
+  grid-template-areas: "titleContent titleContent titleContent titleContent"
+                       "title-infinitive title-simplePast title-pastParticipe title-translation"
+                       "contentRow contentRow contentRow contentRow";
+  
+  margin: 0px;
+  padding: 10px;
+}
+#scroll-container {
+	overflow: auto;
+	height: 780px;
+}
+
+/* Title content */
+#title-content {
+  grid-area: titleContent;
+
+  display: flex;
+	justify-content: center;
+	align-items: center;
+
+  margin: 10px 5px 10px 5px;  
+}
+
+/* Row containing columns title */
+#titleRow {
+  grid-area: titleRow;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 25px;
+
+  grid-template-areas: "infinitive simplePast pastParticipe translation";
+
+  margin: 0px 5px 20px 5px;
+  padding: 0px;
+}
+#temps {
+	height: 40px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px;
+  padding: 5px;
+
+  background-color: rgb(184, 184, 184);
+  border: 1px solid #949494;
+}
+.title-infinitive .title-simplePast .title-pastParticipe .title-translation {
+  grid-area: title-infinitive title-simplePast title-pastParticipe title-translation;
+}
+
+/* Row containing results */
+#contentRow {
+  grid-area: contentRow;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+
+  grid-template-areas: "infinitive simplePast pastParticipe translation";
+  
+  margin: 0px 5px 5px 5px;/*
+  padding: 5px;*//*
+  border: 1px solid #b2bec3;*/
+}
+
+/* Results to put in the rows */
+#infinitive, #simplePast, #pastParticipe, #translation {
+	display: inline-block; 
+
+  margin: 0px;/**/
+  padding: 5px;
+
+  background-color: rgb(230, 230, 230);
+  border: 1px solid #949494;
+}
+/*
+#infinitive, #simplePast, #pastParticipe, #translation {
+  grid-area: infinitive, simplePast, pastParticipe, translation ;
+}
+}*/
