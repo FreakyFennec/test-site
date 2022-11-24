@@ -226,7 +226,16 @@ body {
 .link-post {
   color: black;
 }
-
+.img-livre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .aside {
 	grid-area: aside;
 
