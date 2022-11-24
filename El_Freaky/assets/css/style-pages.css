@@ -1,0 +1,15 @@
+/*
+  style-pages.css
+  ====================
+  Par AHJ
+*/
+
+.div-img-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-travaux {
+    width: 400px;
+
+}
