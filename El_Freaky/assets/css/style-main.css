@@ -208,7 +208,12 @@ body {
 	margin: 30px auto;
 	padding: 0px;
 }
-
+article {
+  margin: 20px;
+}
+.presentation-article, .video {
+  margin: 10px;
+}
 .link-posts {/*
   grid-area: link-posts;*/
   display: flex;
@@ -227,7 +232,7 @@ body {
 .link-post {
   color: black;
 }
-.img-livre {
+.img-livre, .img-vegetal {
   display: flex;
   justify-content: center;
   align-items: center;
