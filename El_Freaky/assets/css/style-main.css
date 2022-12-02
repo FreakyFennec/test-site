@@ -49,9 +49,7 @@ body {
   height: 99vh;
 
 	margin: 0 auto;
-	padding: 0px;											
-  
-  border: 1px solid rgb(163, 164, 170);
+	padding: 0px;
 }
 
 @media only screen and (min-width: 900px) {
