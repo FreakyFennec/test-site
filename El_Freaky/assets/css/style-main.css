@@ -184,18 +184,8 @@ body {
 }
 .main {
   grid-area: main;
-/*
-	display: grid;
 
-	grid-template-columns: 1fr;
-	grid-template-rows: auto 400px;
-
-	grid-template-areas: 
-    "h1-post"
-		"link-form";
-
-*/
-  border-bottom: 1px solid rgb(163, 164, 170);
+  border-bottom: 1px solid rgba(163, 164, 170, 0.5);
 }
 .title-content {
   grid-area: title-content;
