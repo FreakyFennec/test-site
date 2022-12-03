@@ -224,7 +224,7 @@ article {
 .link-post {
   color: black;
 }
-.img-livre, .img-vegetal, .img-tab {
+.img-livre, .img-vegetal, .img-tab, .img-movie {
   display: flex;
   justify-content: center;
   align-items: center;
