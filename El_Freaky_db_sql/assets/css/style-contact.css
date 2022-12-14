@@ -1,0 +1,15 @@
+/*
+  style-blog.css
+  ====================
+  Par AHJ
+*/
+
+.div-img-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-contact {
+    width: 400px;
+
+}
