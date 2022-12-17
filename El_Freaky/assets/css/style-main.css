@@ -229,6 +229,11 @@ article {
   justify-content: center;
   align-items: center;
 }
+.img-velo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .video {
   display: flex;
   justify-content: center;
