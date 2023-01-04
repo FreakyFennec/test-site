@@ -234,6 +234,11 @@ article {
   justify-content: center;
   align-items: center;
 }
+.img-paysage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .video {
   display: flex;
   justify-content: center;
