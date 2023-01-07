@@ -1,0 +1,29 @@
+﻿
+#nav_horiz {   
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #b2bec3;/*
+    border-radius: 3px;*/
+}
+#nav_ul_horiz {
+    list-style-type: none;  
+    padding: 1px 1px 1px 1px;
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+}
+#nav_li_horiz {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+#nav_a_horiz {
+    font-size: 1.3em;
+    color: #464343;
+    padding: 3px;
+    text-decoration: none;  
+}
+#nav_a_horiz:hover {
+    background-color: 438aff;
+    color: rgb(34, 106, 240);/*
+    border-radius: 3px;*/
+    text-decoration: none;
+}

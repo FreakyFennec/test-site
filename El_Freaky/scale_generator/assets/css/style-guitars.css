@@ -1,0 +1,194 @@
+/*
+style-guitars.css
+====================
+Par AHJ
+*/
+
+#content {
+  border: 1px solid  #b2bec3;
+  margin-top: 0px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px; 
+}
+#post {
+  border: 1px solid  #b2bec3;
+  margin-top: 0px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px; 
+}
+#sec-title-date-post{/*
+  border: 1px solid #b2bec3;
+  border-radius: 1px;*/
+  margin: 0px 0px 10px 0px;
+  padding: 0px 10px 0px 10px;
+}
+#div-title-post {
+  border: 1px solid #b2bec3;
+  border-radius: 1px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#div-date-post {
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#p-title-post {
+  font-weight: bold;
+}
+#p-date-post {
+  text-align: right;
+}
+#div-text-post {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 10px;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+}
+#p-text-post {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#postCanvas {
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+#post_detail {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#div-annotations-images {
+  /*border: 1px solid  #b2bec3;
+  width: 60%;*/
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 10px;
+  text-align: left;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+}
+#annotation-image {
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+}
+#img-container {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+img {
+  width: 100%;
+}
+.img-container {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.img_post {
+  width: 60%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 15px solid white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.img_detail {
+  width: 60%;
+  border: 15px solid white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.img_comments {
+  width: 60%;
+}
+#liens {
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+  margin-bottom: 5px;
+}
+#zone_img {
+  margin-bottom: 5px;
+}
+#zone_form {
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+#form_com {
+  margin-bottom: 5px;
+}
+#zone-comments {
+  background-color: #EBECED;/*
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;*/
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+#zone-comment {
+  background-color: #F5F5F5;/*
+  border: 1px solid  #b2bec3;
+  border-radius: 3px;*/
+  padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+#div-pseudo {
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+}
+#p-pseudo {
+  font-weight: bold;
+}
+#pseudo_date {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+#author {
+  height: 25px;
+}
+#div-title-date-comment {/*
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;*/
+}
+#date-comment {
+  text-align: right;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+}
+#div-comment {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;
+}
+#title-comment {
+  font-weight: bold;
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;/*
+  border: 1px solid  #b2bec3;
+  border-radius: 3px;*/
+}
+#p-comment {/*
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;*/
+}
+#p-date-comment {/*
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid  #b2bec3;
+  border-radius: 1px;*/
+}
+#retour {
+  padding: 0px;
+  margin-bottom: 5px;
+}

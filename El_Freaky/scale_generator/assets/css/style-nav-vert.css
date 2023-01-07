@@ -1,0 +1,37 @@
+/*
+style-nav-vert.css
+====================
+Par AHJ
+*/
+
+#menu-aside {
+    background-color: none;
+    padding: 5px;
+    margin: 0px;
+}
+.li-aside {
+    line-height: 30px;
+    padding: 0px;
+    margin: 0px;/**/
+    text-align: left;
+    list-style: none;
+}
+.li_aside:hover {
+    color: antiquewhite;
+}
+.a_aside {
+    font-size: 90%;/*
+    width: 159px;*/
+    display: block;
+    color: #464343;
+    padding: 0px 10px 0px 10px;
+    margin: 5px 5px 0px 5px;/**/
+    border: 1px solid #b2bec3;/**/
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #DDD;
+}
+.a_aside:hover {
+    color: rgb(34, 106, 240);
+    text-decoration: none;
+}

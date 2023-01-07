@@ -1,0 +1,92 @@
+/*
+style-scales-generator-01-01.css
+====================
+Par AHJ
+*/
+
+#sec-title-date-post{/*
+  border: 1px solid #b2bec3;
+  border-radius: 3px;*/
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#div-title-post {
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#div-date-post {
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#p-date-post {
+  text-align: right;
+}
+#form-scales-generator {
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+label {
+  height: 30px;
+  background-color: silver;
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  margin: 5px 0px 5px 0px;
+  padding: 0px 5px 0px 5px;
+}
+select {
+  height: 30px;
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  margin: 5px 10px 5px 0px;
+  padding: 0px 5px 0px 5px;
+}
+button { 
+  height: 30px;
+  width: 55px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}/**/
+#button-run {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#resultsAngloSaxAndStaff {/*
+  border: 1px solid #b2bec3;
+  border-radius: 3px;  */
+  margin: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#notesAngloSax { 
+  border: 1px solid #b2bec3;
+  border-radius: 3px;  
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#notation-anglo-sax {
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+}
+#scalesGenerator {/*
+  position: relative;
+  background-color: #;
+  top: 50%;
+  transform: translateY(-50%);*//* 
+  border: 1px solid #b2bec3;
+  border-radius: 3px; */
+  margin: 0px 0px 0px 0px;
+  padding: 16% 0% 16% 0%;
+}
+#postCanvas {
+  border: 1px solid #b2bec3;
+  border-radius: 3px;  
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}

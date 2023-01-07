@@ -1,0 +1,72 @@
+/*
+style-main.css
+====================
+Par AHJ
+*/
+
+body {
+	margin: 10px;
+    padding: 0px;
+}
+.container-fluid {
+    max-width: 1024px;
+}
+#header {
+    text-align: center;
+    background-color: rgb(52, 133, 255);
+    border: 1px solid #b2bec3;
+}
+#lienTitre {
+    color: rgb(24, 23, 23);
+    text-decoration: none;
+}
+#titleContent {
+    text-align: center;
+    margin: 5px;
+    background-color: azure;
+    border: 1px solid #b2bec3;   
+}
+#content {
+    text-align: center;
+	margin: 0px;
+    padding: 0px;
+    border: 1px solid #b2bec3;
+}
+.sectionPresentation {
+    margin: 5px;
+    background-color: #DDD;
+    border: 1px solid #b2bec3;  
+}
+h1, h2, h3, h4 {
+	font-family: Arial, serif;
+	/*font-size: 1.5em;*/
+	color: #b2bec3;
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+}
+[class*="col-"], section {
+	line-height:  30px;
+	text-align: center;
+	background-color: #EBECED;
+}
+#titre_principal {
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;    
+}
+p {
+	font-size: 1em;
+	margin: 10px 10px 5px 10px;
+	text-align: left;
+	line-height: 20px;
+}
+.liensPages {
+    list-style: none;
+}
+#liensPages {
+    color: black;
+    text-decoration: none;
+}
+#links-and-posts {
+    border: 1px solid #b2bec3;    
+}
