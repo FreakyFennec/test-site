@@ -399,7 +399,7 @@ function scalesGenerator() {
 
         }*/
     }
-    document.getElementById('scalesGenerator').innerHTML = fondamentale + qualitee + " : <br>" + scale;
+    document.getElementById('scalesGenerator').innerHTML = "<p id='name-scale-selected'>" + fondamentale + qualitee + " : </p>" + "<br>" + "<p id='scale-selected'>" + scale +"</p>";
 
  
 

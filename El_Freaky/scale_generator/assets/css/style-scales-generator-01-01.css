@@ -91,22 +91,24 @@ select {
   border-radius: 3px;  
 }*/
 #notation-anglo-sax {
-  margin: 0px 0px 0px 0px;
-  padding: 10px;
+  grid-area: notation-anglo-sax;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0px;
+  padding: 0px;
 
   border: 1px solid #b2bec3;
   border-radius: 3px;
-}/*
+}
 #scalesGenerator {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #;*//* 
+  margin: 5px;
+  padding: 10px;
+/*
   border: 1px solid #b2bec3;
-  border-radius: 3px; 
-  margin: 0px 0px 0px 0px;
-  padding: 16% 0% 16% 0%;
-}*/
+  border-radius: 3px; */
+}
 #postCanvas {
   grid-area: postCanvas;
 
