@@ -4,68 +4,119 @@ style-scales-generator-01-01.css
 Par AHJ
 */
 
-#form-scales-generator {
+
+
+#form-scales-generator {  
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30px 30px;
+
+  grid-template-areas: "lab-fondamentale lab-alteration lab-qualitee button"
+                        "fondamentale alteration qualitee button";
+
+  margin: 10px 0px 0px 0px;
+  padding: 5px 5px 15px 5px;
+
   border: 1px solid #b2bec3;
   border-radius: 3px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
 }
+
+#lab-fondamentale, #lab-alteration, #lab-qualitee {
+  grid-area: lab-fondamentale, lab-alteration, lab-qualitee;
+}
+#fondamentale {
+  grid-area: fondamentale;
+}
+
+#alteration {
+  grid-area: alteration;
+}
+
+#qualitee {
+  grid-area: qualitee;
+}
+
 label {
-  height: 30px;
+  height: 25px;
+  width: 200px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+  padding: 0px 0px 0px 0px;
+
   background-color: silver;
   border: 1px solid #b2bec3;
   border-radius: 3px;
-  margin: 5px 0px 5px 0px;
-  padding: 0px 5px 0px 5px;
 }
 select {
   height: 30px;
+  width: 200px;
+  
+  margin: 5px;
+  padding: 0px 5px 0px 5px;
+
   border: 1px solid #b2bec3;
   border-radius: 3px;
-  margin: 5px 10px 5px 0px;
-  padding: 0px 5px 0px 5px;
 }
-button { 
-  height: 30px;
-  width: 55px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}/**/
+
 #button-run {
-  display: inline-block;
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  height: 60px;
+  width: 90px;
+
+  margin: 5px;
+  padding: 0px;
 }
-#resultsAngloSaxAndStaff {/*
+
+#resultsAngloSaxAndStaff {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 120px;
+
+  grid-template-areas: "notation-anglo-sax postCanvas";
+
+  margin: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;/*
   border: 1px solid #b2bec3;
   border-radius: 3px;  */
-  margin: 5px 0px 5px 0px;
-  padding: 0px 0px 0px 0px;
-}
-#notesAngloSax { 
+}/*
+#notesAngloSax {
+  grid-area: notesAngloSax;
+
   border: 1px solid #b2bec3;
   border-radius: 3px;  
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
+}*/
 #notation-anglo-sax {
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+
   border: 1px solid #b2bec3;
   border-radius: 3px;
-}
-#scalesGenerator {/*
+}/*
+#scalesGenerator {
   position: relative;
-  background-color: #;
   top: 50%;
-  transform: translateY(-50%);*//* 
+  transform: translateY(-50%);
+  background-color: #;*//* 
   border: 1px solid #b2bec3;
-  border-radius: 3px; */
+  border-radius: 3px; 
   margin: 0px 0px 0px 0px;
   padding: 16% 0% 16% 0%;
-}
+}*/
 #postCanvas {
-  border: 1px solid #b2bec3;
-  border-radius: 3px;  
+  grid-area: postCanvas;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+
+  border: 1px solid #b2bec3;
+  border-radius: 3px;  
 }

@@ -34,60 +34,59 @@
 			<h1 class="title-content">Welcome to the El Freaky's pages</h1>
 
             <article>
-                <div class="row" id="links-and-posts">
-                    <div class="col-lg-10" id="post">
-        
-                        <form class="col-md-12" id="form-scales-generator">
-                            <label for="fondamentale">Fondamentale :</label>
-                            <select id="fondamentale" name="fondamentale">
-                                <option value="C" selected="selected">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                            </select>                    
-                            <label for="alteration">Altération :</label>
-                            <select id="alteration" name="alteration">
-                                <option value=" " selected="selected">Sans</option>
-                                <option value="#">#</option>
-                                <option value="b">b</option>
-                            </select>
+                <h2 id="title-article">Scales Generator (JS)</h2>
+                
+                <form class="col-md-12" id="form-scales-generator">
+                    <label id="lab-fondamentale" for="fondamentale">Fondamentale :</label>
+                    <select id="fondamentale" name="fondamentale">
+                        <option value="C" selected="selected">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                    </select>
+
+                    <label id="lab-alteration" for="alteration">Altération :</label>
+                    <select id="alteration" name="alteration">
+                        <option value=" " selected="selected">Sans</option>
+                        <option value="#">#</option>
+                        <option value="b">b</option>
+                    </select>
+                
+                    <label id="lab-qualitee" for="qualitee">Qualitée :</label>
+                    <select id="qualitee" name="qualitee">
+                        <option value="Maj" selected="selected">Majeure</option>
+                        <option value="minNat">Mineure naturelle</option>
+                        <option value="minHar">Mineure harmonique</option>
+                        <option value="minMelAsc">Mineure mélodique ascendante</option>
+                        <option value="minMelDesc">Mineure mélodique descendante</option>
+                        <option value="dim">Diminuée</option>
+                        <!-- <option value="aug">Augmentée</option>                            
+                        <option value="sus4">Sus4</option> -->
+                    </select>
                         
-                            <label for="qualitee">Qualitée :</label>
-                            <select id="qualitee" name="qualitee">
-                                <option value="Maj" selected="selected">Majeure</option>
-                                <option value="minNat">Mineure naturelle</option>
-                                <option value="minHar">Mineure harmonique</option>
-                                <option value="minMelAsc">Mineure mélodique ascendante</option>
-                                <option value="minMelDesc">Mineure mélodique descendante</option>
-                                <option value="dim">Diminuée</option>
-                                <!-- <option value="aug">Augmentée</option>                            
-                                <option value="sus4">Sus4</option> -->
-                            </select>
-                                
-                            <button id="button-run" type="button" class="btn btn-primary" id="buttonRun" onclick="scalesGenerator();">Run</button>
-                        </form>
+                    <button id="button-run" type="button" class="btn btn-primary" id="buttonRun" onclick="scalesGenerator();">Run</button>
+                </form>
 
-                        <section class="row" id="resultsAngloSaxAndStaff">
+                <section class="row" id="resultsAngloSaxAndStaff">
 
-                            <div class="col-md-3" id="notation-anglo-sax">
-                                <div id="scalesGenerator"></div>
-                            </div>
+                    <div class="col-md-3" id="notation-anglo-sax">
+                        <div id="scalesGenerator"></div>
+                    </div>
 
-                            <div class="col-md-9" id="postCanvas" onload="draw_4();">
-                                <canvas id="canvas_4" width="540" height="120"></canvas>
-                            </div>
-                        </section>
-                                    
-                        <section class="manche" id="postCanvas" onload="draw_6();">       
-                            <canvas id="canvas_6" width="600" height="140"></canvas> 
-                        </section>
-
-                    </div><!-- /.col-md-10 -->
-                </section><!-- /.end content -->
+                    <div class="col-md-9" id="postCanvas" onload="draw_4();">
+                        <canvas id="canvas_4" width="500" height="120"></canvas>
+                    </div>
+                </section>
+                            
+                <section class="manche" id="postCanvas" onload="draw_6();">       
+                    <canvas id="canvas_6" width="600" height="140"></canvas> 
+                </section>
             </article>
+                    
+        </section><!-- /.end content -->
                         
             <aside class="aside"><!-- aside -->
                 <ul class="ul-aside">
