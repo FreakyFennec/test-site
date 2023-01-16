@@ -1,0 +1,16 @@
+/*
+  style-blog.css
+  ====================
+  Par AHJ
+*/
+
+
+.div-img-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-travaux {
+    width: 400px;
+
+}
