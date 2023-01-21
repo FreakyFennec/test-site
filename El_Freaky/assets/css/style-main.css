@@ -202,7 +202,7 @@ body {
 article { 
   margin: 20px;
   padding: 20px;
-  background-color: rgba(219, 219, 219, 0.5);
+  background-color: rgba(219, 219, 219, 0.904);
   border-radius: 3px;
 }
 .presentation-article, .video {
