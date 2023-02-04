@@ -120,7 +120,7 @@ body {
   margin: 0px;
   padding: 10px;
 
-  background-color: #0262bd;
+  background-color: #19a3ff;
 }
 
 .nav {
@@ -173,14 +173,14 @@ body {
 
 	color: #313131;
 
-	background-color: #fcab4f;
+	background-color: #fd7d00;
   border: 1px solid rgb(163, 164, 170);
 	border-radius: 100px;
 }
 .li-home:hover, .li-blog:hover, .li-contact:hover {
 	font-weight: bold;
 
-	background-color: #f7fa3d;
+	background-color: #f2fb7a;
   border: 1px solid rgb(163, 164, 170);
   border-radius: 100px;
 }
