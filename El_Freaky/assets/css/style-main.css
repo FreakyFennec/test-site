@@ -246,6 +246,15 @@ article {
   justify-content: center;
   align-items: center;
 }
+.aFrame-panoramique {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  width: 600px;
+  height: 400px;}
 .aside {
 	grid-area: aside;
 
