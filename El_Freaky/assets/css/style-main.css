@@ -206,6 +206,7 @@ article {
   border-radius: 3px;
 }
 .presentation-article, .video {
+  text-align: justify;
   margin: 10px;
 }
 .link-posts {/*
