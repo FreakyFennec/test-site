@@ -5,12 +5,12 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "dev_tools";
+        $dbname = "el_freaky";
 
-        $name = $_POST['name'];
-        $signification = $_POST['signification'];
-        $definition = $_POST['definition'];
-        $type = $_POST['type'];
+        $title = $_POST['title'];
+        $presentation = $_POST['presentation'];
+        $illustration = $_POST['illustration'];
+        $category = $_POST['category'];
 
         // Connect to mysqli
         $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -22,10 +22,10 @@
         }
 
         // Prepare query
-        $statement = $conn->prepare("INSERT INTO  dev_glossary(name, signification, definition, type) VALUES (?, ?, ?, ?)");
+        $statement = $conn->prepare("INSERT INTO  articles(title, presentation, illustration, category) VALUES (?, ?, ?, ?)");
 
         // Bind values and execute insert
-        $statement->bind_param("ssss",$name, $signification, $definition, $type);
+        $statement->bind_param("ssss",$title, $presentation, $illustration, $category);
 
         if ($statement->execute()) {
             print "C'est okay !";

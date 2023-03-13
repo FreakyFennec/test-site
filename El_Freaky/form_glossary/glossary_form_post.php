@@ -32,30 +32,20 @@
                 <form method="post" action="controller.php">
                     <fieldset id="fieldsetText">
                         <div>                    
-                            <label id="inputTextLabel" for="name">Nom</label>
-                            <input type="text" id="inputText" name="name" required minlength="2" maxlength="20" size="20"></input><br>
-                                            
-                            <label id="inputTextLabel" for="signification">Signification</label>
-                            <input type="text" id="inputText" name="signification" required minlength="4" maxlength="100" size="20"></input><br>
+                            <label id="inputTextLabel" for="title">Titre</label>
+                            <input type="text" id="inputText" name="title" required minlength="2" maxlength="100" size="20"></input><br>
                                            
-                            <label id="textAreaLabel" for="definition">Definition</label>
-                            <textarea type="text" id="textArea" name="definition" required rows="3" cols="33"></textarea><br>
+                            <label id="textAreaLabel" for="presentation">Présentation</label>
+                            <textarea type="text" id="textArea" name="presentation" required rows="3" cols="33"></textarea><br>
+                                            
+                            <label id="inputTextLabel" for="illustration">Illustration</label>
+                            <input type="text" id="inputText" name="illustration" required minlength="4" maxlength="100" size="20"></input><br>
+                                            
+                            <label id="inputTextLabel" for="category">Catégorie</label>
+                            <input type="text" id="inputText" name="category" required minlength="4" maxlength="100" size="20"></input><br>
                         </div>
                     </fieldset>
-                    <fieldset id="fieldsetButtonR">
-                        <div id="zoneChoiceType">
-                            <span>Type</span><br>
-
-                            <input type="radio" id="type" name="type" value="Sigle" class="choiceType">
-                            <label for="sigle">Sigle</label><br>
-
-                            <input type="radio" id="type" name="type" value="Acronyme" class="choiceType">
-                            <label for="acronyme">Acronyme</label><br>
-
-                            <input type="radio" id="type" name="type" value="Label" class="choiceType">
-                            <label for="label">Label</label><br>
-                        </div>
-                    </fieldset>
+                    
                     <button type="submit">Submit</button>
                 </form>
 
