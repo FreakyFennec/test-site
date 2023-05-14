@@ -1,7 +1,7 @@
 /*
   style-main.css
   ====================
-  Par AHJ
+  By AHJ
 */
 
 *,
@@ -52,57 +52,6 @@ body {
 	margin: 0 auto;
 	padding: 0px;
 }
-/*
-@media only screen and (min-width: 500px) {
-	.grid {
-		display: grid;
-
-		max-width: 1024px;
-
-		margin: 0px;
-  	padding: 0px;
-		
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: 23px 23px 20px  auto 50px 45px;
-		
-		grid-template-areas: "a-header a-header a-header a-header a-header"
-                         " nav nav nav nav nav"
-							 					 "aside main main main main"
-							 					 "aside main main main main"
-                         "pager pager pager pager pager"
-							 					 "footer footer footer footer footer";
-			
-		width: 100%;
-		height: 99vh;
-		margin: 0 auto;
-		padding: 0px;								 		
-	}
-	.a-header {
-		grid-area: a-header;
-
-		grid-column-start: 1;
-    grid-column-end: 6;
-	}
-	.nav {
-		grid-area: nav;
-
-		grid-column-start: 1;
-    grid-column-end: 6;
-	}
-  .aside {
-      grid-area: aside;
-     
-      grid-column-start: 1;
-      grid-column-end: 2;
-  }
-  .main {
-      grid-area: main;
-
-      grid-column-start: 2;
-      grid-column-end: 6;
-  }
-}
-*/
 .a-header {
   grid-area: a-header;
 

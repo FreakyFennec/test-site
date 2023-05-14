@@ -1,7 +1,7 @@
 /*
   style-responsive.css
   ====================
-  Par AHJ
+  By AHJ
 */
 
 @media only screen and (min-width: 500px) {
@@ -182,7 +182,7 @@
   }
   .presentation-article, .video {
     text-align: justify;
-    margin: 10px;
+    margin: 10px 0px;
   }
   .link-posts {/*
     grid-area: link-posts;*/
