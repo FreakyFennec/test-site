@@ -258,7 +258,7 @@ article {
   align-items: center;
 }
 iframe {
-  width: 375px;
+  width: 350px;
   height: 400px;}
 .aside {
 	grid-area: aside;
