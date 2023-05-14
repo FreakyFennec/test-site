@@ -52,7 +52,7 @@ body {
 	margin: 0 auto;
 	padding: 0px;
 }
-
+/***/
 @media only screen and (min-width: 900px) {
 	.grid {
 		display: grid;
@@ -199,6 +199,11 @@ body {
 	margin: 30px auto;
 	padding: 0px;
 }
+
+.two-column-text {
+  column-count: 1;
+  column-gap: 0px;
+}
 article { 
   margin: 20px;
   padding: 20px;
@@ -248,13 +253,12 @@ article {
   align-items: center;
 }
 .aFrame-panoramique {
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 iframe {
-  width: 600px;
+  width: 375px;
   height: 400px;}
 .aside {
 	grid-area: aside;
