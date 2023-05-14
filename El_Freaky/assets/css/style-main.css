@@ -18,7 +18,7 @@
 
 body {
 	margin: 0px;
-  padding: 5px;
+  padding: 0px;
 	
   font-family: Arial, Helvetica, sans-serif;
 
@@ -205,14 +205,14 @@ body {
   column-gap: 0px;
 }
 article { 
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
   background-color: rgba(219, 219, 219, 0.904);
   border-radius: 3px;
 }
 .presentation-article, .video {
   text-align: justify;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
 }
 .link-posts {/*
   grid-area: link-posts;*/
