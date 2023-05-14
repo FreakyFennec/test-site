@@ -260,7 +260,8 @@ article {
 }
 iframe {
   width: 350px;
-  height: 400px;}
+  height: 500px;
+}
 .aside {
 	grid-area: aside;
 
