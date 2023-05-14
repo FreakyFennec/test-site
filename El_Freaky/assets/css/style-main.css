@@ -233,6 +233,7 @@ article {
   color: black;
 }
 .img-livre, .img-vegetal, .img-tab, .img-movie, .img-conserve {
+  /* width: 350px; */
   display: flex;
   justify-content: center;
   align-items: center;
