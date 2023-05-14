@@ -4,22 +4,22 @@
   Par AHJ
 */
 
-body {
-    margin: 0px;
-    padding: 0px;
-    
-    font-family: Arial, Helvetica, sans-serif;
-
-    /*background-color: rgba(240, 255, 255, 0.048);*/
-    
-    background-image: url(../../assets/img/tags-Marseille-L-Estaque-1-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;/**/
-    background-attachment:fixed;
-  
-}
-
 @media only screen and (min-width: 500px) {
+  body {
+      margin: 0px;
+      padding: 0px;
+      
+      font-family: Arial, Helvetica, sans-serif;
+
+      /*background-color: rgba(240, 255, 255, 0.048);*/
+      
+      background-image: url(../../assets/img/tags-Marseille-L-Estaque-1-01.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;/**/
+      background-attachment:fixed;
+    
+  }
+
 	.grid {
 		display: grid;
 
@@ -166,11 +166,10 @@ body {
     padding: 0px;
   }
   
-
-.two-column-text {
-  column-count: 2;
-  column-gap: 20px;
-}
+  .two-column-text {
+    column-count: 2;
+    column-gap: 20px;
+  }
   article { 
     margin: 20px;
     padding: 20px;
