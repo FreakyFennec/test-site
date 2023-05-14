@@ -194,6 +194,10 @@ article {
   background-color: rgba(219, 219, 219, 0.904);
   border-radius: 3px;
 }
+.two-column-text {
+  column-count: 2;
+  column-gap: 20px;
+}
 .presentation-article, .video {
   text-align: justify;
   margin: 10px;
