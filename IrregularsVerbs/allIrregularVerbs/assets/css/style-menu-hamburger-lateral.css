@@ -1,6 +1,6 @@
 /*
-  style-menu-hamgurger-lateral-1-02.css
-  =============================================
+  style-menu-hamgurger-lateral.css
+  =================================
   By AHJ
 */
 
@@ -44,7 +44,7 @@
 }
 
 .sidenav a:hover {
-  color: #1867fa;
+  color: #3485ff;
 }
 
 .sidenav ul {
@@ -79,7 +79,7 @@
 
   padding-right: 15px;
 
-  background-color: rgba(52, 133, 255, 0.712)
+  background-color: #3485ff
 }
 
 /* Icône burger */
@@ -91,12 +91,12 @@
 
   margin: 6px;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 #openBtnName {
   font-size: 0.9em;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   
   padding: 0px 0px 0px 6px;
 }

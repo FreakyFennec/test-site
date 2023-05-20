@@ -51,7 +51,10 @@ By AHJ
 	justify-content: center;
 	align-items: center;
 
+	background-color: #f1f1f1;
+
 	border: 1px solid grey;
+	border-radius: 4px;
 }
 .title-infinitive {
 	grid-area: title-infinitive;
@@ -72,7 +75,10 @@ By AHJ
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	background-color: #f1f1f1;
 	border: 1px solid grey;
+	border-radius: 4px;
 }
 #infinit {
 	grid-area: infinit;
@@ -102,6 +108,7 @@ By AHJ
 
 	background-color: white;
 	border: 1px solid grey;
+	border-radius: 4px;
 }
 
 /* Image of for the result */

@@ -1,5 +1,5 @@
 /*
-  style-main-1-02.css
+  style-main.css
   ====================
   Par AHJ
 */
@@ -18,59 +18,23 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 
-	margin: 0px;
-  padding: 0px;
 }
 .grid {
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 7vh 83vh 5vh 5vh;
 
   grid-template-areas: "header openBtn"
                         "content content"
                         "pagination pagination"
                         "footer footer";
   
-  width: 100%;/*
-  margin: 0px auto;*/
+  width: 100%;
 
-	background-image: url(../img/british-flag-1-02.png);
+	background-image: url(../img/british-flag.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid rgb(163, 164, 170);
 }
-/*
-@media only screen and (min-width: 900px) {
-  .grid {
-    max-width: 1024px;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px auto auto auto;
-    grid-gap: 0px;
-
-    grid-template-areas: "header openBtn"
-                          "content content"
-                          "pagination pagination"
-                          "footer footer";
-
-		background-image: url(../img/british-flag-1-02.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-  }
-  .grid div, header, nav, content, footer {
-   font-size: 16px;
-
-   padding: 0px;
-  }
-  .website-name {
-    grid-area: website-name;
-  
-    font-size: 1.5em;
-  }
-  
-}
-*/
 .header {
   grid-area: header;
 
@@ -81,10 +45,7 @@ body {
 	justify-content: left;
 	align-items: center;
 
-  background-color: rgba(52, 133, 255, 0.712);
-  border-top: 1px solid #b2bec3;
-  border-bottom: 1px solid #b2bec3;
-  border-left: 1px solid #b2bec3;
+  background-color: #3485ff;
 }
 .website-name {
   grid-area: website-name;
@@ -95,39 +56,27 @@ body {
 .h1-website-name {
   grid-area: h1-website-name;
 
-  font-size: 1.5em;
+  font-size: 1.7em;
   
-  color: rgb(255, 255, 255);
-
-  margin: 0px;
+  color: #ffffff;
 }
 
 .content {
   grid-area: content;
-
-	margin: 0px;
-  padding: 0px;
-
-  border: 1px solid #b2bec3;
 }
 .section-content {
   grid-area: content;
 
-	margin: 0px;
   padding: 20px 20px 10px 20px;
 
-  background-color: rgba(221, 221, 221, 0.5);/*
-  border: 1px solid #b2bec3;*/
+  background-color: #dddddd;
 }
 .title-content {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 h1, h2, h3, h4 {
-	color: #000;
-
-	text-align: left;
+	color: #000000;
 }
 .a-page {
   color: black;
@@ -140,7 +89,7 @@ h1, h2, h3, h4 {
 
   margin: 15px 0px;
 
-  background-color: #c7d2d665;
+  background-color: #c7d2d6;
 }
 .link-description:hover {
   background-color: #cbecf8;
@@ -153,7 +102,7 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(221, 221, 221, 0.712);
+  background-color: #dddddd;
   border: 1px solid #b2bec3;
 }
 .a-link-pagination {
@@ -162,12 +111,12 @@ h1, h2, h3, h4 {
   margin: 5px ;
   padding: 5px ;
 
-  background-color: rgba(52, 133, 255, 0.712);
+  background-color: #3485ff;
   border: 1px solid #b2bec3;
   border-radius: 5px;
 }
 .a-link-pagination:hover {
-  background-color: rgba(255, 59, 52, 0.932);
+  background-color: #ff3b34;
 }
 
 footer {
@@ -180,11 +129,11 @@ footer {
   margin: 0px; 
   padding: 0px;
 
-  background-color: rgba(52, 133, 255, 0.712);
+  background-color: #3485ff;
   border: 1px solid #b2bec3;
 }
 .footer-content {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 
   margin: 0px;
   padding: 10px;
