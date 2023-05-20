@@ -24,7 +24,7 @@ function displayAllIrregularVerb() {
 					{'Infinitive' : 'bid', 'Simple past' : 'bid/bad', 'Past participe' : 'bid/bidden', 'Translation Fr' : 'offrir'},
 					{'Infinitive' : 'bite', 'Simple past' : 'bite', 'Past participe' : 'bitten', 'Translation Fr' : 'mordre'},
 					{'Infinitive' : 'bleed', 'Simple past' : 'bled', 'Past participe' : 'bled', 'Translation Fr' : 'saigner'},
-					{'Infinitive' : 'blow', 'Simple past' : 'blew', 'Past participe' : 'blown', 'Translation Fr' : 'souffler/gonfler'},
+					{'Infinitive' : 'blow', 'Simple past' : 'blew', 'Past participe' : 'blown', 'Translation Fr' : 'souffler / gonfler'},
 					{'Infinitive' : 'break', 'Simple past' : 'broke', 'Past participe' : 'broken', 'Translation Fr' : 'casser'},
 					{'Infinitive' : 'bring', 'Simple past' : 'brought', 'Past participe' : 'brought', 'Translation Fr' : 'apporter'},
 					{'Infinitive' : 'broadcast', 'Simple past' : 'broadcast', 'Past participe' : 'broadcast', 'Translation Fr' : 'diffuser / émettre'},
