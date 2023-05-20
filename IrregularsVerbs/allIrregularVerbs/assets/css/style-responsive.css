@@ -1,0 +1,132 @@
+/*
+  style-responsive.css
+  ====================
+  Par AHJ
+*/
+
+@media (min-width: 600px) {
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+    }
+    .grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: "header openBtn"
+                            "content content"
+                            "pagination pagination"
+                            "footer footer";
+    
+    width: 100%;
+
+        background-image: url(../img/british-flag.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .header {
+    grid-area: header;
+
+    padding: 10px;
+    text-align: center;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+    background-color: #3485ff;
+    }
+    .website-name {
+    grid-area: website-name;
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+    .h1-website-name {
+    grid-area: h1-website-name;
+
+    font-size: 1.7em;
+    
+    color: #ffffff;
+    }
+
+    .content {
+    grid-area: content;
+    }
+    .section-content {
+    grid-area: content;
+
+    padding: 20px 20px 10px 20px;
+
+    background-color: #dddddd;
+    }
+    .title-content {
+    text-align: center;
+    }
+
+    h1, h2, h3, h4 {
+        color: #000000;
+    }
+    .a-page {
+    color: black;
+
+    margin: 10px 0px;
+    }
+
+    .link-description {
+    line-height: 25px;
+
+    margin: 15px 0px;
+
+    background-color: #c7d2d6;
+    }
+    .link-description:hover {
+    background-color: #cbecf8;
+    }
+
+    .pagination {
+    grid-area: pagination;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dddddd;
+    border: 1px solid #b2bec3;
+    }
+    .a-link-pagination {
+    color: rgb(255, 255, 255);
+
+    margin: 5px ;
+    padding: 5px ;
+
+    background-color: #3485ff;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+    }
+    .a-link-pagination:hover {
+    background-color: #ff3b34;
+    }
+
+    footer {
+    grid-area: footer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px; 
+    padding: 0px;
+
+    background-color: #3485ff;
+    border: 1px solid #b2bec3;
+    }
+    .footer-content {
+    color: #ffffff;
+
+    margin: 0px;
+    padding: 10px;
+    }
+}
