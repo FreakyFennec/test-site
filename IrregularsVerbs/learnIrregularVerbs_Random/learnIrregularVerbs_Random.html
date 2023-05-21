@@ -38,28 +38,24 @@
         </a>
         
         <div class="content">
-            <section class="section-table">
-                <h1 class="title-table">Learn irregular verbs (random)</h1>
-
-                <table class="table">    
-                    <thead>
-                        <tr id="titleRow">
-                            <th id="tenses">Infinitive</th>
-                            <th id="tenses">Simple past</th>
-                            <th id="tenses">Past participe</th>
-                            <th id="tenses">Translation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="contentRow">
-                            <td id="verb"></td>
-                            <td id="verb"></td>
-                            <td id="verb"></td>
-                            <td id="verb"></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <section class="section-rand-verb">
+                <h1 class="title-rand-verb">Learn irregular verbs (random)</h1>
                 
+                <div class="rand-verb">
+                    <div id="titleRow">
+                        <div class="title-infinitive" id="tenses">Infinitive</div>
+                        <div class="title-simplePast" id="tenses">Simple past</div>
+                        <div class="title-pastParticipe" id="tenses">Past participe</div>
+                        <div class="translation" id="tenses">Translation</div>
+                    </div>
+                    
+                    <div id="contentRow">
+                        <div class="infinitive" id="verb"></div>
+                        <div class="simplePast" id="verb"></div>
+                        <div class="pastParticipe" id="verb"></div>
+                        <div class="translation" id="verb"></div>
+                    </div>
+                </div>   
                 <button class="button-next" onclick="displayIrregularVerb();">Next</button>                                       
             </section>
         </div>

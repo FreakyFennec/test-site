@@ -32,45 +32,13 @@ body {
                         "pagination pagination"
                         "footer footer";
   
-  width: 100%;/*
-  margin: 0px auto;*/
+  width: 100%;
 
 	background-image: url(../img/british-flag.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid rgb(163, 164, 170);
 }
-/*
-@media only screen and (min-width: 900px) {
-  .grid {
-    max-width: 1024px;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px auto auto auto;
-    grid-gap: 0px;
-
-    grid-template-areas: "header openBtn"
-                          "content content"
-                          "pagination pagination"
-                          "footer footer";
-
-		background-image: url(../img/british-flag-1-02.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-  }
-  .grid div, header, nav, content, footer {
-   font-size: 16px;
-
-   padding: 0px;
-  }
-  .website-name {
-    grid-area: website-name;
-  
-    font-size: 1.5em;
-  }
-  
-}
-*/
 .header {
   grid-area: header;
 
@@ -116,8 +84,7 @@ body {
 	margin: 0px;
   padding: 20px 20px 10px 20px;
 
-  background-color: rgba(221, 221, 221, 0.5);/*
-  border: 1px solid #b2bec3;*/
+  background-color: rgba(221, 221, 221, 0.5);
 }
 .title-content {
   text-align: center;

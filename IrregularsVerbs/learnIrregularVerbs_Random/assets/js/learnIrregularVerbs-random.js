@@ -196,9 +196,9 @@ function displayIrregularVerb() {
 
 	for (let tenses in randVerb) {
 /**/
-		document.getElementById('titleRow').innerHTML += '<th id="tenses">' + tenses + '</th>';
+		document.getElementById('titleRow').innerHTML += '<div id="tenses">' + tenses + '</div>';
 	
-		document.getElementById('contentRow').innerHTML += '<td id="verb">' + randVerb[tenses] + '</td>';
+		document.getElementById('contentRow').innerHTML += '<div id="verb">' + randVerb[tenses] + '</div>';
 	}
 }/*
 displayIrregularVerb();

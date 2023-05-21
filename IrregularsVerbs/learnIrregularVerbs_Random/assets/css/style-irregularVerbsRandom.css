@@ -4,7 +4,7 @@
     Par AHJ
 */
 
-.section-table {
+.section-rand-verb {
     display: grid;
 
     grid-template-columns: 1fr;
@@ -12,15 +12,16 @@
 
     grid-gap: 0px;
 
-    grid-template-areas: "title-table"
-                          "table"
+    grid-template-areas: "title-rand-verb"
+                          "rand-verb"
                           "button";
-       
-	margin: 0px;
-    padding: 20px 20px 10px 20px;
+    
+    max-width: 600px;
+	margin: auto;
+    padding: auto;
 }
-.title-table {
-    grid-area: title-table;
+.title-rand-verb {
+    grid-area: title-rand-verb;
 
     grid-template-columns: 1fr;
     grid-template-rows: auto ;
@@ -29,55 +30,56 @@
     justify-content: center;
     align-items: center;
 }
-.table {
-    grid-area: table;
+.rand-verb {
+    grid-area: rand-verb;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: auto ;
-   
-    max-width: 900px;
-
-    margin: 30px auto;
-
-    background-color: azure;
-	border-collapse: collapse;
-    border: 1px solid #b2bec3;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas:
+        "titleRow"
+        "contentRow";
 }
 #titleRow {
-    margin: 5px;
-    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "title-infinitive title-simplePast title-pastParticipe title-translation"
+        "infinitive simplePast pastParticipe translation";
+    margin: 0px;
+    background-color: rgb(146, 146, 146);
+    border-radius: 4px;
 }
 #tenses {
+    text-align: center;
     font-weight: bold;
     padding: 5px;
-    background-color: azure;
-    border: 1px solid #b2bec3;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #7e7e7e;
+    border-radius: 4px;
 }
 #verb {
     text-align: center;
     padding: 5px;
+    background-color: #ffffff;
     border: 1px solid #b2bec3;
-}
+    border-radius: 4px;
+} 
 #contentRow {
-    margin: 5px;
-    background-color: #DDD;
-}
-#infinitive {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "infinitive simplePast pastParticipe translation"
+        "verb verb verb verb";
+    margin: 0px;
+}/* 
+.title-infinitive, .title-simplePast, .title-pastParticipe, .title-translation {
+    grid-area: title-infinitive;
     margin: 0px;    
     border: 1px solid #b2bec3;
 }
-#simplePast {
-    margin: 0px;    
+.infinitive, .simplePast, .pastParticipe, .translation {
     border: 1px solid #b2bec3;
-}
-#pastParticipe {   
-    margin: 0px;    
-    border: 1px solid #b2bec3;
-}
-#translation {   
-    margin: 0px;   
-    border: 1px solid #b2bec3;
-}
+} */
 button {
     grid-area: button;
 
