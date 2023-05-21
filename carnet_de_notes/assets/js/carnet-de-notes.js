@@ -25,7 +25,7 @@ function displayAllNotes() {
             "descriptionLink": "ici",
             "link": "https://css-tricks.com/perfect-full-page-background-image/"
         },
-        /**/ {
+        {
             "title": "MathJax (pour bien afficher les formules mathématique)",
             "category": "API",
             "note": "C'est une bibliothèque pour afficher des formules mathématique en JS.",
