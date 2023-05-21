@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 500.00001 500.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ico_greenCross.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="2.3619305"
+     inkscape:cy="306.18394"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4702"
+     showgrid="false"
+     units="px"
+     showborder="true"
+     inkscape:window-width="1265"
+     inkscape:window-height="919"
+     inkscape:window-x="51"
+     inkscape:window-y="71"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-552.36216)"
+     id="g4702"
+     inkscape:groupmode="layer"
+     inkscape:label="validateGreen"
+     style="display:inline">
+    <g
+       id="g4724"
+       transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,621.59892,-4.899249)">
+      <rect
+         style="opacity:1;fill:#0df900;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4706"
+         width="96.503197"
+         height="206.66605"
+         x="944.96344"
+         y="-386.10101"
+         ry="0.037355121"
+         transform="matrix(-0.00137498,0.99999905,-0.99997173,-0.00751867,0,0)" />
+      <rect
+         style="opacity:1;fill:#0df900;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4708"
+         width="96.503578"
+         height="472.16272"
+         x="-387.90903"
+         y="-1041.9099"
+         ry="0.085343942"
+         transform="matrix(-0.99999507,-0.00314143,0.00329093,-0.99999458,0,0)" />
+    </g>
+  </g>
+</svg>

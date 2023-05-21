@@ -105,6 +105,8 @@ By AHJ
 #checkImages {
 	grid-area: checkImages;
 
+	width: 20px;
+
 	margin: 0px;
 	padding: 0px;
 }
