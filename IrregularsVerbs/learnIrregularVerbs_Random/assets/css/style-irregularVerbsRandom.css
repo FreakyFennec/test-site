@@ -71,15 +71,7 @@
         "infinitive simplePast pastParticipe translation"
         "verb verb verb verb";
     margin: 0px;
-}/* 
-.title-infinitive, .title-simplePast, .title-pastParticipe, .title-translation {
-    grid-area: title-infinitive;
-    margin: 0px;    
-    border: 1px solid #b2bec3;
 }
-.infinitive, .simplePast, .pastParticipe, .translation {
-    border: 1px solid #b2bec3;
-} */
 button {
     grid-area: button;
 
@@ -89,6 +81,3 @@ button {
     margin: 20px auto;
     padding: 5px;
 }
-/*
-.button_next { 
-}*/
