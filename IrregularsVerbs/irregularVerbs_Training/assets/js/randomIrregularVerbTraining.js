@@ -219,9 +219,14 @@ console.log(displayedVerb + ', ' + randVerb.simplePast + ', ' + randVerb.pastPar
 */
 	if (inputSimplePast == randVerb.simplePast && inputPastParticipe == randVerb.pastParticipe) {
 
-		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' + randVerb.Infinitive + '</div>';
-		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' + randVerb.simplePast + '<span id="zoneCheckImages"><img src="assets/img/green-check-mark-25x25.png" alt="green-check-mark" id="checkImages"></span></div>';
-		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' + randVerb.pastParticipe + '<span id="zoneCheckImages"><img src="assets/img/green-check-mark-25x25.png" alt="green-check-mark" id="checkImages"></span></div>';
+		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' 
+			+ randVerb.Infinitive + '</div>';
+		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' 
+			+ randVerb.simplePast 
+			+ '<span id="zoneCheckImages"><img src="assets/img/ico_greenValidate.svg" alt="ico_greenValidate" id="checkImages"></span></div>';
+		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' 
+			+ randVerb.pastParticipe 
+			+ '<span id="zoneCheckImages"><img src="assets/img/ico_greenValidate.svg" alt="ico_greenValidate" id="checkImages"></span></div>';
 			
 		document.getElementById('zoneBoutonCheck').innerHTML = '';
 		document.getElementById('zoneBoutonCheck').innerHTML = '<button id="boutonCheck" onclick="checkRespons();"></button>';
@@ -230,9 +235,13 @@ console.log(displayedVerb + ', ' + randVerb.simplePast + ', ' + randVerb.pastPar
 
 	} else if (inputSimplePast != randVerb.simplePast && inputPastParticipe == randVerb.pastParticipe) {
 
-		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' + randVerb.Infinitive + '</div>';
-		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' + randVerb.simplePast + '<span id="zoneCheckImages"><img src="assets/img/red-cross-mark-25x25.png" alt="red-cross-mark" id="checkImages"></span></div>';
-		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' + randVerb.pastParticipe + '<span id="zoneCheckImages"><img src="assets/img/green-check-mark-25x25.png" alt="green-check-mark" id="checkImages"></span></div>';
+		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' 
+			+ randVerb.Infinitive + '</div>';
+		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' 
+			+ randVerb.simplePast + '<span id="zoneCheckImages"><img type="image/svg+xml" src="assets/img/red-cross-mark-25x25.png" alt="red-cross-mark" id="checkImages"></span></div>';
+		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' 
+			+ randVerb.pastParticipe 
+			+ '<span id="zoneCheckImages"><img type="image/svg+xml" src="assets/img/ico_greenValidate.svg" alt="ico_greenValidate" id="checkImages"></span></div>';
 		
 		document.getElementById('zoneBoutonCheck').innerHTML = '';
 		document.getElementById('zoneBoutonCheck').innerHTML = '<button id="boutonCheck" onclick="checkRespons();">Check</button>';
@@ -240,9 +249,14 @@ console.log(displayedVerb + ', ' + randVerb.simplePast + ', ' + randVerb.pastPar
 
 	} else if (inputSimplePast == randVerb.simplePast && inputPastParticipe != randVerb.pastParticipe) {
 
-		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' + randVerb.Infinitive + '</div>';
-		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' + randVerb.simplePast + '<span id="zoneCheckImages"><img src="assets/img/green-check-mark-25x25.png" alt="green-check-mark" id="checkImages"></span></div>';
-		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' + randVerb.pastParticipe + '<span id="zoneCheckImages"><img src="assets/img/red-cross-mark-25x25.png" alt="red-cross-mark" id="checkImages"></span></div>';
+		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' 
+			+ randVerb.Infinitive + '</div>';
+		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' 
+			+ randVerb.simplePast 
+			+ '<span id="zoneCheckImages"><img type="image/svg+xml" src="assets/img/ico_greenValidate.svg" alt="ico_greenValidate" id="checkImages"></span></div>';
+		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' 
+			+ randVerb.pastParticipe 
+			+ '<span id="zoneCheckImages"><img type="image/svg+xml" src="assets/img/ico_redCross.svg" alt="red-cross-mark" id="checkImages"></span></div>';
 		
 		document.getElementById('zoneBoutonCheck').innerHTML = '';
 		document.getElementById('zoneBoutonCheck').innerHTML = '<button id="boutonCheck" onclick="checkRespons();">Check</button>';
@@ -250,9 +264,13 @@ console.log(displayedVerb + ', ' + randVerb.simplePast + ', ' + randVerb.pastPar
 
 	} else if (inputSimplePast != randVerb.simplePast && inputPastParticipe != randVerb.pastParticipe) {
 
-		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" class="col-12" type="text" id="infinitive">' + randVerb.Infinitive + '</div>';
-		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" class="col-12" type="text" id="simplePast">' + randVerb.simplePast + '<span id="zoneCheckImages"><img src="assets/img/red-cross-mark-25x25.png" alt="red-cross-mark" id="checkImages"></span></div>';
-		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" class="col-12" type="text" id="pastParticipe">' + randVerb.pastParticipe + '<span id="zoneCheckImages"><img src="assets/img/red-cross-mark-25x25.png" alt="red-cross-mark" id="checkImages"></span></div>';
+		document.getElementById('infinit').innerHTML = '<div class="corrected-verb" type="text" id="infinitive">' 
+			+ randVerb.Infinitive + '</div>';
+		document.getElementById('simpleP').innerHTML = '<div class="corrected-verb" type="text" id="simplePast">' 
+			+ randVerb.simplePast + '<span id="zoneCheckImages"><img type="image/svg+xml" src="assets/img/ico_redCross.svg" alt="red-cross-mark" id="checkImages"></span></div>';
+		document.getElementById('pastP').innerHTML = '<div class="corrected-verb" type="text" id="pastParticipe">' 
+			+ randVerb.pastParticipe 
+			+ '<span id="zoneCheckImages"><img type="image/svg+xml" src="assets/img/ico_redCross.svg" alt="red-cross-mark" id="checkImages"></span></div>';
 		
 		document.getElementById('zoneBoutonCheck').innerHTML = '';
 		document.getElementById('zoneBoutonCheck').innerHTML = '<button id="boutonCheck" onclick="checkRespons();">Check</button>';

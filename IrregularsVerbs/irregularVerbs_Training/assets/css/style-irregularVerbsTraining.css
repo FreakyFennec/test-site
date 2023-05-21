@@ -1,6 +1,6 @@
 /*
-style-irregularVerbsTraining-1-03.css
-==========
+style-irregularVerbsTraining.css
+================================
 By AHJ
 */
 
@@ -11,21 +11,17 @@ By AHJ
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50px 40px 40px 40px auto;
 
-  grid-gap: 0px;
-
   grid-template-areas: "title-content title-content"
                         "title-infinitive infinit"
                         "title-simplePast simpleP"
                         "title-pastParticipe pastP"
                         "zoneBoutonCheck zoneBoutonCheck";
-    
-   
+      
 	max-width: 600px;   
 	
 	margin: 0px auto;
 	padding: 0px;
 }
-
 /* Table title */
 .title-content {
   grid-area: title-content;
@@ -40,9 +36,8 @@ By AHJ
   margin: 0px;
   padding: 0px;
 }
-
 /* Columns title */
-.title-infinitive, .title-simplePast ,.title-pastParticipe {
+.title-infinitive, .title-simplePast , .title-pastParticipe {
 	height: 40px;
 	
 	font-weight: bold;
@@ -52,22 +47,17 @@ By AHJ
 	align-items: center;
 
 	background-color: #f1f1f1;
-
 	border: 1px solid grey;
 	border-radius: 4px;
 }
-.title-infinitive {
-	grid-area: title-infinitive;
+.title-infinitive, #infinit {
+	grid-area: title-infinitive infinit;
 
 	margin-top: 30px;
 }
-.title-simplePast {
-	grid-area: title-simplePast;
+.title-simplePast, .title-pastParticipe {
+	grid-area: title-simplePast title-pastParticipe;
 }
-.title-pastParticipe {
-	grid-area: title-pastParticipe;
-}
-
 /* Row containing inputs and results */
 #infinit, #simpleP, #pastP {
 	height: 40px;
@@ -80,37 +70,27 @@ By AHJ
 	border: 1px solid grey;
 	border-radius: 4px;
 }
-#infinit {
-	grid-area: infinit;
-
-	margin-top: 30px;
-}
 #simpleP{
 	grid-area: simpleP;
 }
 #pastP {
 	grid-area: pastP;
 }
-
 /* Inputs and results cells */
 #infinitive, #simplePast, #pastParticipe {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	text-align:center;
 	
-	padding: 5px;
-}
-#infinitive, #simplePast, #pastParticipe {
 	width: 150px;
 	height: 30px;
+
+	padding: 5px;
 
 	background-color: white;
 	border: 1px solid grey;
 	border-radius: 4px;
 }
-
 /* Image of for the result */
 #zoneCheckImages {
 	grid-area: zoneCheckImages;
@@ -118,6 +98,7 @@ By AHJ
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	margin-left: 15px;
 	padding: 0px;
 }
@@ -127,7 +108,6 @@ By AHJ
 	margin: 0px;
 	padding: 0px;
 }
-
 /* Button for correction or refresh */
 #zoneBoutonCheck{
 	grid-area: zoneBoutonCheck;
