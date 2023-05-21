@@ -1,6 +1,6 @@
 /*
-  style-main-1-02.css
-  ====================
+  style-main.css
+  ==============
   Par AHJ
 */
 
@@ -35,42 +35,11 @@ body {
   width: 100%;/*
   margin: 0px auto;*/
 
-	background-image: url(../img/british-flag-1-02.jpg);
+	background-image: url(../img/british-flag.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid rgb(163, 164, 170);
 }
-/*
-@media only screen and (min-width: 900px) {
-  .grid {
-    max-width: 1024px;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px auto auto auto;
-    grid-gap: 0px;
-
-    grid-template-areas: "header openBtn"
-                          "content content"
-                          "pagination pagination"
-                          "footer footer";
-
-		background-image: url(../img/british-flag-1-02.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-  }
-  .grid div, header, nav, content, footer {
-   font-size: 16px;
-
-   padding: 0px;
-  }
-  .website-name {
-    grid-area: website-name;
-  
-    font-size: 1.5em;
-  }
-  
-}
-*/
 .header {
   grid-area: header;
 
@@ -113,11 +82,13 @@ body {
 .section-content {
   grid-area: content;
 
-	margin: 0px;
-  padding: 20px 20px 10px 20px;
+  max-width: 600px;
 
-  background-color: rgba(221, 221, 221, 0.5);/*
-  border: 1px solid #b2bec3;*/
+	margin: 30px auto;
+  padding: 20px 10px 10px 10px;
+
+  background-color: #dddddd;
+  border-radius: 5px;
 }
 .title-content {
   text-align: center;
@@ -138,12 +109,14 @@ h1, h2, h3, h4 {
 .link-description {
   line-height: 25px;
 
-  margin: 15px 0px;
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
 
-  background-color: #c7d2d665;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 .link-description:hover {
-  background-color: #cbecf8;
+  background-color: #d0f8cb;
 }
 
 .pagination {
