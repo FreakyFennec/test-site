@@ -264,8 +264,9 @@ footer {
         
         margin-bottom: 5px;
     }
-    .titleSite {
+    .titleSite a {
         font-size: 1.8em;
+        color: #ffffff;
     }
     #game-container {/*
         width: 60%;*/
