@@ -149,6 +149,8 @@ article {
     margin: 0px auto;
 }
 svg {
+    max-width: 100%;
+    height: auto;
     margin: 0px;
     padding: 10px;
     background-color: #505050;/**/
