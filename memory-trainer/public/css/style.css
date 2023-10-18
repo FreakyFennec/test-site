@@ -169,7 +169,27 @@ footer {
 }
 
 /********************** RESPONSIVE ************************/
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 200px) {
+    body {
+            font-size: 14px;
+        }       
+        .headerNav a {
+            color: #fff;
+            text-decoration: none;
+        
+            margin-bottom: 10px;
+        }
+        .titleSite {
+            font-size: 1em;
+        }
+        #game-container {/*
+            width: 100%;*/
+            height: auto;
+            margin: 0px auto;
+        }
+}
+
+@media screen and (max-width: 201px) and (max-width: 374px) {
 
     body {
         font-size: 14px;
@@ -178,7 +198,7 @@ footer {
         color: #fff;
         text-decoration: none;
     
-        margin: 10px;
+        margin-bottom: 10px;
     }
     .titleSite {
         font-size: 1em;
@@ -200,7 +220,7 @@ footer {
         color: #fff;
         text-decoration: none;
     
-        margin: 10px;
+        margin-bottom: 10px;
         
         flex-grow: 1;
     }
@@ -238,7 +258,7 @@ footer {
         justify-content: right;
         text-align: center;
         
-        margin: 5px;
+        margin-bottom: 5px;
     }
     .titleSite {
         font-size: 1.8em;
@@ -268,13 +288,13 @@ footer {
         background-color: #333;
     }
     .headerNav {
-    grid-area: headerNav;
+        grid-area: headerNav;
 
-    display: flex;        
-    justify-content: right;
-    text-align: center;
-    
-    margin: 5px;
+        display: flex;        
+        justify-content: right;
+        text-align: center;
+        
+        margin-bottom: 5px;
     }
     .titleSite {
         font-size: 2em;
