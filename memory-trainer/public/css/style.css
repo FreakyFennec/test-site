@@ -145,7 +145,7 @@ article {
 }
 #game-container {/*
     width: 60%;*/
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     margin: 0px auto;
 }
@@ -187,9 +187,9 @@ footer {
         }
         #game-container {/*
             width: 100%;*/
-    max-width: 100%;
-    height: auto;
-            margin: 0px;
+            max-width: 95%;
+            height: auto;
+            margin: 0px auto;
         }
 }
 
