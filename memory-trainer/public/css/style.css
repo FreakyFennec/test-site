@@ -147,6 +147,9 @@ article {
     padding: 0px;
     text-align: center;
 }
+.img-link {
+    width: 150px;
+}
 #game-container {
     max-width: 95%;
     height: auto;
@@ -204,7 +207,7 @@ footer {
     } 
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
     body {
         max-width: 99%;
         margin: 0px auto;

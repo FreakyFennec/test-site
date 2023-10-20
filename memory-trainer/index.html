@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="shortcut icon" href="public/img/ico/iconeTSFWS.ico" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="index.html">
+                <div class="logoAndTitle">
+                    <div class="logoSite">
+                        <img class="logoImg" src="public/img/ico/logoTSFWS.svg" alt="logoTSFWS">
+                    </div>
+                    <div class="titleSite"><a class="link-index" href="../index.html">The Stinky Feet's Workshop</a></div>
+                </div>
+            </a>            
+            <nav class="headerNav">
+                <a href="#">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <main class="main"><!--  -->
+            <h1 class="titlePage">Memory trainer</h1>
+            <section>
+                <h2 class="title_section"></h2>
+                <article>
+                    <h3 class="title_article">Simon Type Game</h3>                    
+                    <a href="simon-type-game.html"><img class="img-link" src="public/img/simon-type-game.png" alt=""></a>
+                </article>
+                <article>
+                    <h3 class="title_article">Keyboard trainer</h3>                    
+                    <a href="keyboard-trainer.html"><img class="img-link" src="public/img/keyboard-1-octave.png" alt=""></a>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">&copy The Stinky Feet's Workshop - 2023</footer>
+    </div>
+
+    <script>
+        let sequence = [];
+        let playerSequence = [];
+        let colors = ['red', 'blue', 'yellow', 'green'];
+        let gameStarted = false;
+        let currentStep = 0;
+
+        function startGame() {
+            if (!gameStarted) {
+                sequence = [];
+                playerSequence = [];
+                currentStep = 0;
+                nextStep();
+                gameStarted = true;
+                document.getElementById('startButton').disabled = true;
+            }
+        }
+
+        function nextStep() {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            sequence.push(randomColor);
+            playSequence();
+        }
+
+        function playSound(note) {
+            const audio = new Audio(`public/sound/${note}.wav`);
+            audio.play();
+        }
+
+        function playSequence() {
+            let i = 0;
+            const interval = setInterval(function () {
+                highlightColor(sequence[i]);
+                i++;
+                if (i >= sequence.length) {
+                    clearInterval(interval);
+                }
+            }, 800);
+        }
+
+        function highlightColor(color) {
+            const path = document.getElementById(color);
+
+            const originalColor = path.style.fill;
+
+            path.style.fill = 'url(#'+ color + '-gradient)';
+
+            setTimeout(function () {
+                path.style.fill = originalColor;
+
+                playSound(color.replace('color', ''));
+            }, 500);
+        }
+
+        function checkColor(clickedColor) {
+            if (gameStarted) {
+                highlightColor(clickedColor);
+                playerSequence.push(clickedColor);
+
+                if (playerSequence[currentStep] === sequence[currentStep]) {
+                    currentStep++;
+
+                    if (currentStep === sequence.length) {
+                        currentStep = 0;
+                        playerSequence = [];
+                        setTimeout(nextStep, 500);
+                    }
+                } else {
+                    alert('Game Over! Votre score : ' + (sequence.length - 1));
+                    gameStarted = false;
+                    document.getElementById('startButton').disabled = false;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
