@@ -297,7 +297,7 @@ canvas.addEventListener('click', function(event) {
 
     } else if (x >= buttonXNo && x <= buttonXNo + buttonWidth && y >= buttonYYes && y <= buttonYYes + buttonHeight) {
 
-        window.location.href = "../test-site/index.html";
+        window.location.href = "https://freakyfennec.github.io/test-site/";
 
     }
 });
