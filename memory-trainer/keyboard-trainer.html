@@ -19,7 +19,7 @@
                     </div>
                     <div class="titleSite"><a class="link-index" href="index.html">The Stinky Feet's Workshop</a></div>
                 </div>
-            </a>            
+            </a>
             <nav class="headerNav">
                 <a href="#">Accueil</a>
                 <a href="#">À propos</a>
@@ -27,13 +27,13 @@
             </nav>
         </header>
 
-        <main class="main"><!-- 
+        <main class="main"><!--
             <h1 class="titlePage">Memory trainer</h1> -->
             <section>
                 <h2 class="title_section"></h2>
                 <article>
-                    <h3 class="title_article">Keyboard trainer</h3>                    
-                    <div id="game-container">  
+                    <h3 class="title_article">Keyboard trainer</h3>
+                    <div id="game-container">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -418,7 +418,7 @@
                                 d="m -0.415391,136.31652 c -0.001289,0.036 -0.011719,0.0697 -0.011719,0.106 l 0,225.46922 c 0,1.93931 1.856366,3.50033 4.162109,3.50033 l 38.675782,0 c 2.305743,0 4.162109,-1.56102 4.162109,-3.50033 l 0,-84.87998 -14.576172,0 c -1.010561,0 -1.824219,-0.83327 -1.824219,-1.86818 l 0,-138.82706 -30.58789,0 z" 
                                 onclick="checkKey('keyC')" />
                             </g>
-                            
+
                             <!-- start-button -->
 							<rect
                                 id="startButton"
@@ -438,13 +438,13 @@
                                 fill="#ffffff"
                                 id="text-startButton"
                                 onclick="startGame()"
-                            >Start</text>                       
-                        
+                            >Start</text>
+
                             <!-- radial gradient colors -->
 							<radialGradient id="color-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
                                 <stop offset="0%" style="stop-color:#f8aeae;stop-opacity:1" />
                                 <stop offset="100%" style="stop-color:#f41503;stop-opacity:1" />
-                            </radialGradient>                            
+                            </radialGradient>
                         </svg>
                     </div>
                 </article>
@@ -457,12 +457,12 @@
         let sequence = [];
         let playerSequence = [];
         let keys = [
-            'keyC', 'keyCSharp', 
-            'keyD', 'keyDSharp', 
-            'keyE', 
-            'keyF', 'keyFSharp', 
-            'keyG', 'keyGSharp', 
-            'keyA', 'keyASharp', 
+            'keyC', 'keyCSharp',
+            'keyD', 'keyDSharp',
+            'keyE',
+            'keyF', 'keyFSharp',
+            'keyG', 'keyGSharp',
+            'keyA', 'keyASharp',
             'keyB'
         ];
         let gameStarted = false;
@@ -503,18 +503,18 @@
 
         function highlightKey(key) {
             const path = document.getElementById(key);
-            
+
             const originalColor = path.style.fill;  // Sauvegarde de la couleur d'origine
-            
+
             path.style.fill = 'url(#color-gradient)';   // Changement de la couleur pour le dégradé
             setTimeout(function () {
-                
+
                 path.style.fill = originalColor;    // Restauration de la couleur d'origine
 
                 playSound(key.replace("key", ""));   // Appel de la fonction playSound avec le nom de la note
             }, 500);
         }
-        
+
         function checkKey(clickedKey) {
             if (gameStarted) {
                 highlightKey(clickedKey);
