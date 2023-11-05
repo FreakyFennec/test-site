@@ -1,0 +1,360 @@
+*,
+::before,
+::after {
+    box-sizing: 0px;
+
+    margin: 0px;
+    padding: 0px;
+
+    text-decoration: none;
+    list-style: none;
+}
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/************************ CONTAINER **************************/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;      /* Ajout de deux lignes, pour header et footer */
+    height: 100vh;
+    grid-gap: 0px;
+}
+
+/************************ HEADER **************************/
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "logoAndTitle"
+        "headerNav";
+    grid-column: 1 / -1;
+
+    margin: 0px;
+    background-color: #333;
+}
+.logoAndTitle {
+    grid-area: logoAndTitle;
+
+    display: flex;
+    grid-template-areas: "logoSite titleImg";
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+.logoSite {
+    grid-area: logoSite;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center; /* Ajout de cette propriété pour centrer le texte */
+
+    margin-right: 5px;
+    background-color: #4eb9f7;
+    border-radius: 50px;
+}
+.logoImg {
+    width: 70%;
+    margin: auto;
+}
+.link-index {
+    color: #cccccc;
+}
+
+.titleSite {
+    grid-area: titleSite;
+
+    height: 70px;
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.title_article {
+    color: #cccccc;
+    margin: 20px 10px 10px 10px;
+}
+
+/************************ NAV **************************/
+.headerNav {
+    grid-area: headerNav;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0px;
+    margin-top: -10px;
+}
+.headerNav a {
+    color: #cccccc;
+    text-decoration: none;
+
+    margin: 0px 10px 0px 10px;
+    padding: 5px;
+}
+.headerNav a:hover {
+    color: #20ff19;
+}
+
+/************************ MAIN **************************/
+main {
+    grid-area: main;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "titlePage"
+        "section";
+
+    margin: 0px;
+    background-color: #505050;
+}
+.titlePage {
+    color: #2e2e2e;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid rgb(163, 164, 170);
+}
+section {
+    grid-area: section;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2e2e;
+    margin: 5px 0;
+    padding: 0px;
+    text-align: center;
+}
+article {
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+}
+#game-container {
+    max-width: 95%;
+    height: auto;
+    margin: 0px auto;
+}
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+    border: 1px solid rgb(202, 202, 202);
+}
+/************************ FOOTER **************************/
+footer {
+    grid-area: footer;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-column:  1 / -1;
+    grid-row: 4;
+    border: 1px solid rgb(163, 164, 170);
+}
+
+/********************** RESPONSIVE ************************/
+
+@media screen and (min-width: 201px) and (max-width: 374px) {
+
+    body {
+        font-size: 14px;
+    }
+    .logoAndTitle {
+        margin: 0px 10px 0px 10px;
+    }
+    .logoSite {
+        width: 50px;
+        height: 50px;
+    }
+
+    .headerNav a {
+        color: #cccccc;
+        text-decoration: none;
+
+        margin: 5px 5px;
+        flex: 1;
+
+        background-color: #7d7d7e;
+        border-radius: 3px;
+    }
+    .titleSite {
+        font-size: 1.2em;
+    }
+    .link-index {
+        font-size: 1em;
+    }
+    article {
+        padding: 0px;
+    }
+    #game-container {
+        height: auto;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    body {
+        max-width: 99%;
+        margin: 0px auto;
+        font-size: 15px;
+    }
+    .logoAndTitle {
+        margin: 0px 10px 0px 10px;
+    }
+    .logoSite {
+        width: 55px;
+        height: 55px;
+    }
+    .headerNav a {
+        color: #cccccc;
+        text-decoration: none;
+
+        margin: 10px 5px;
+        flex: 1;
+
+        background-color: #a3a4aa;
+        border-radius: 5px;
+    }
+    .titleSite {
+        font-size: 1.6em;
+    }
+    .link-index {
+        font-size: 1.1em;
+    }
+    article {
+        padding: 0px;
+    }
+    #game-container {
+        height: auto;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        max-width: 98%;
+        margin: 0px auto;
+        font-size: 16px;
+    }
+    .logoSite {
+        width: 60px;
+        height: 60px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logoAndTitle headerNav";
+        grid-column: 1 / -1;
+        background-color: #333;
+    }
+    .headerNav {
+        grid-area: headerNav;
+
+        display: flex;
+        justify-content: right;
+        text-align: center;
+
+        margin-bottom: 5px;
+    }
+    .titleSite a {
+        color: #cccccc;
+    }
+    .link-index {
+        font-size: 1.1em;
+    }
+    #game-container {
+        height: auto;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        max-width: 97%;
+        margin: 0px auto;
+        font-size: 17px;
+    }
+    .logoSite {
+        width: 65px;
+        height: 65px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logoAndTitle headerNav";
+        grid-column: 1 / -1;
+        background-color: #333;
+    }
+    .headerNav {
+        grid-area: headerNav;
+
+        display: flex;
+        justify-content: right;
+        text-align: center;
+
+        margin-bottom: 5px;
+    }
+    .titleSite {
+        font-size: 1.5em;
+    }
+    #game-container {
+        height: auto;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 80%;
+        margin: 0px auto;
+        font-size: 18px;
+    }
+    .logoSite {
+        width: 60px;
+        height: 60px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logoAndTitle headerNav";
+        grid-column: 1 / -1;
+        background-color: #333;
+    }
+    .headerNav {
+        grid-area: headerNav;
+
+        display: flex;
+        justify-content: right;
+        text-align: center;
+
+        margin: 5px;
+    }
+    .titleSite {
+        font-size: 1.6em;
+    }
+    #game-container {
+        height: auto;
+        margin: 0px auto;
+    }
+}
