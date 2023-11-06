@@ -202,7 +202,14 @@ footer {
         font-size: 1em;
     }
     article {
+        margin: 0px;
         padding: 0px;
+    }
+    .titlePage {
+        font-size: 1.1em;
+        text-align: center;
+        margin: 0px;
+        padding: 5px;
     }
     #game-container {
         height: auto;
@@ -238,6 +245,11 @@ footer {
     }
     .link-index {
         font-size: 1.1em;
+    }
+    .titlePage {
+        font-size: 1.1em;
+        text-align: center;
+        padding: 5px;
     }
     article {
         padding: 0px;
