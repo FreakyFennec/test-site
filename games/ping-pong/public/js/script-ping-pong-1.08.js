@@ -266,7 +266,7 @@ canvas.addEventListener("touchstart", (e) => {
 });
 
 canvas.addEventListener("touchmove", (e) => {
-    e.preventDefault(); // Prevent window scrolling
+    // e.preventDefault(); // Prevent window scrolling
 
     const touchCurrentX = e.touches[0].clientX;
     const touchDeltaX = touchCurrentX - touchStartX;
