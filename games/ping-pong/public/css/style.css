@@ -147,7 +147,7 @@ article {
     text-align: center;
 }
 #game-container {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
     margin: 0px auto;
 }
