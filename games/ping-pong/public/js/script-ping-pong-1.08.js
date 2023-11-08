@@ -1,14 +1,11 @@
 /**
- * script-ping-pong-1.06.js
+ * script-ping-pong-1.08.js
  * ===========================
  * 10/2023
  */
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-
-// Variables for "Yes" and "No" buttuns
-
 
 // Draw start button
 function startButton() {
